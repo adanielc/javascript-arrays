@@ -205,7 +205,7 @@ Encandenando dos o más Maps
 ```javascript
 let numberArray = [1, 2, 3, 4, 5];
 let returnValue = numberArray
-  .map((num) => num * 2)
+	.map((num) => num * 2)
 	.map((num) => num.toString())
   console.log(numberArray);
 console.log(returnValue);
