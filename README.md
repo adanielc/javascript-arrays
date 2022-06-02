@@ -132,7 +132,7 @@ Devuelve los elementos eliminados.
 
 ### forEach
 
-Recorre cada elemento del array. 
+Recorre cada elemento del array. No devuelve nada
 
 Parámetros:
 
@@ -163,4 +163,57 @@ El resultado sería:
 'value Mac Studio'
 'index 3'
 'array iMac,iMac Pro,Mac Mini,Mac Studio'
+```
+
+### Map
+
+Recorre cada elemento del array. Devuelve un nuevo array con lo que se evalue en la funcion dentro del Map y puedes encadenar más de un Map
+
+Parámetros:
+
+```javascript
+const result = apple.map((value, index, array)=> {
+  console.log("value "+ value)
+  console.log("index "+ index)
+  console.log("array "+ array)
+})
+```
+
+value: El valor de esa iteración<br>
+index: El índice del array<br>
+array: Todo el Array, es util si necesitamos comparar algo o si no tenemos el array en el contexto de la función
+
+El resultado sería: 
+
+```javascript
+'value iMac'
+'index 0'
+'array iMac,iMac Pro,Mac Mini,Mac Studio'
+'value iMac Pro'
+'index 1'
+'array iMac,iMac Pro,Mac Mini,Mac Studio'
+'value Mac Mini'
+'index 2'
+'array iMac,iMac Pro,Mac Mini,Mac Studio'
+'value Mac Studio'
+'index 3'
+'array iMac,iMac Pro,Mac Mini,Mac Studio'
+```
+
+Encandenando dos o más Maps
+
+```javascript
+let numberArray = [1, 2, 3, 4, 5];
+let returnValue = numberArray
+  .map((num) => num * 2)
+	.map((num) => num.toString())
+  console.log(numberArray);
+console.log(returnValue);
+```
+
+El resultado sería: 
+
+```javascript
+[ 1, 2, 3, 4, 5 ]
+[ '2', '4', '6', '8', '10' ]
 ```
