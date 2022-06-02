@@ -86,9 +86,12 @@ El resultado sería:
 
 ### Splice
 Sirve para añadir elementos en una posicion especifica en el array y podemos eliminar elementos del Array. 
-Parámetros: 
-Array.splice(start, deleteCount, item1, item2,...itemN)
-start: Donde se va a empezar a insertar en el Array, la cuenta empieza en 0
+
+Parámetros: <br>
+
+Array.splice(start, deleteCount, item1, item2,...itemN)<br>
+
+start: Donde se va a empezar a insertar en el Array, la cuenta empieza en 0<br>
 deleteCount: la cantidad de elementos que se van a eliminar, a partir de el valor de start. 
 
 devuelve los elementos Eliminados
@@ -141,8 +144,8 @@ apple.forEach((value, index, array)=> {
 })
 ```
 
-value: El valor de esa iteración
-index: El índice del array
+value: El valor de esa iteración<br>
+index: El índice del array<br>
 array: Todo el Array, es util si necesitamos comparar algo o si no tenemos el array en el contexto de la función
 
 El resultado sería: 
